@@ -10,6 +10,10 @@
 		125652B225ADF8100003889F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125652B125ADF8100003889F /* AppDelegate.swift */; };
 		125652BB25ADF8150003889F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125652BA25ADF8150003889F /* Assets.xcassets */; };
 		125652BE25ADF8150003889F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125652BC25ADF8150003889F /* LaunchScreen.storyboard */; };
+		12EA0B2725B0538700AA3D37 /* GCTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA0B2625B0538700AA3D37 /* GCTitleLabel.swift */; };
+		12EA0B2B25B0557F00AA3D37 /* GCBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA0B2A25B0557F00AA3D37 /* GCBodyLabel.swift */; };
+		12EA0B2E25B0564F00AA3D37 /* GCAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA0B2D25B0564F00AA3D37 /* GCAlertVC.swift */; };
+		12EA0B3125B05DBE00AA3D37 /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA0B3025B05DBE00AA3D37 /* UIViewController + Ext.swift */; };
 		12EA4D3A25AFC17F003CF865 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA4D3925AFC17F003CF865 /* FavoritesListVC.swift */; };
 		12EA4D3D25AFC18F003CF865 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA4D3C25AFC18F003CF865 /* SearchVC.swift */; };
 		12EA4D4025AFC1B6003CF865 /* GCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA4D3F25AFC1B6003CF865 /* GCButton.swift */; };
@@ -24,6 +28,10 @@
 		125652BA25ADF8150003889F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125652BD25ADF8150003889F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125652BF25ADF8150003889F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12EA0B2625B0538700AA3D37 /* GCTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCTitleLabel.swift; sourceTree = "<group>"; };
+		12EA0B2A25B0557F00AA3D37 /* GCBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCBodyLabel.swift; sourceTree = "<group>"; };
+		12EA0B2D25B0564F00AA3D37 /* GCAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCAlertVC.swift; sourceTree = "<group>"; };
+		12EA0B3025B05DBE00AA3D37 /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
 		12EA4D3925AFC17F003CF865 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		12EA4D3C25AFC18F003CF865 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		12EA4D3F25AFC1B6003CF865 /* GCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCButton.swift; sourceTree = "<group>"; };
@@ -62,18 +70,54 @@
 		125652B025ADF8100003889F /* Git */ = {
 			isa = PBXGroup;
 			children = (
-				125652B125ADF8100003889F /* AppDelegate.swift */,
-				12EA4D4725AFC4B2003CF865 /* SceneDelegate.swift */,
+				12EA0B3525B061EB00AA3D37 /* Extensions */,
+				12EA0B3425B061BC00AA3D37 /* Custom Views */,
+				12EA0B3325B0619100AA3D37 /* View Controllers */,
+				12EA0B3625B0624900AA3D37 /* Support */,
+			);
+			path = Git;
+			sourceTree = "<group>";
+		};
+		12EA0B3325B0619100AA3D37 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12EA0B2D25B0564F00AA3D37 /* GCAlertVC.swift */,
 				12EA4D3C25AFC18F003CF865 /* SearchVC.swift */,
 				12EA4D4B25AFD16A003CF865 /* FallowerListVC.swift */,
 				12EA4D3925AFC17F003CF865 /* FavoritesListVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		12EA0B3425B061BC00AA3D37 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				12EA0B2625B0538700AA3D37 /* GCTitleLabel.swift */,
+				12EA0B2A25B0557F00AA3D37 /* GCBodyLabel.swift */,
 				12EA4D3F25AFC1B6003CF865 /* GCButton.swift */,
 				12EA4D4225AFC1CF003CF865 /* GCTextField.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		12EA0B3525B061EB00AA3D37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12EA0B3025B05DBE00AA3D37 /* UIViewController + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		12EA0B3625B0624900AA3D37 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				125652B125ADF8100003889F /* AppDelegate.swift */,
+				12EA4D4725AFC4B2003CF865 /* SceneDelegate.swift */,
 				125652BA25ADF8150003889F /* Assets.xcassets */,
 				125652BC25ADF8150003889F /* LaunchScreen.storyboard */,
 				125652BF25ADF8150003889F /* Info.plist */,
 			);
-			path = Git;
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12EA0B2B25B0557F00AA3D37 /* GCBodyLabel.swift in Sources */,
 				12EA4D3A25AFC17F003CF865 /* FavoritesListVC.swift in Sources */,
+				12EA0B3125B05DBE00AA3D37 /* UIViewController + Ext.swift in Sources */,
 				12EA4D4C25AFD16A003CF865 /* FallowerListVC.swift in Sources */,
+				12EA0B2E25B0564F00AA3D37 /* GCAlertVC.swift in Sources */,
+				12EA0B2725B0538700AA3D37 /* GCTitleLabel.swift in Sources */,
 				12EA4D4825AFC4B2003CF865 /* SceneDelegate.swift in Sources */,
 				12EA4D4325AFC1CF003CF865 /* GCTextField.swift in Sources */,
 				12EA4D3D25AFC18F003CF865 /* SearchVC.swift in Sources */,
@@ -292,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FT674V95S;
-				INFOPLIST_FILE = Git/Info.plist;
+				INFOPLIST_FILE = Git/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FT674V95S;
-				INFOPLIST_FILE = Git/Info.plist;
+				INFOPLIST_FILE = Git/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
