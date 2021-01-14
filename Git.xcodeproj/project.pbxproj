@@ -15,6 +15,7 @@
 		12EA4D4025AFC1B6003CF865 /* GCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA4D3F25AFC1B6003CF865 /* GCButton.swift */; };
 		12EA4D4325AFC1CF003CF865 /* GCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA4D4225AFC1CF003CF865 /* GCTextField.swift */; };
 		12EA4D4825AFC4B2003CF865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA4D4725AFC4B2003CF865 /* SceneDelegate.swift */; };
+		12EA4D4C25AFD16A003CF865 /* FallowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA4D4B25AFD16A003CF865 /* FallowerListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		12EA4D3F25AFC1B6003CF865 /* GCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCButton.swift; sourceTree = "<group>"; };
 		12EA4D4225AFC1CF003CF865 /* GCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCTextField.swift; sourceTree = "<group>"; };
 		12EA4D4725AFC4B2003CF865 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		12EA4D4B25AFD16A003CF865 /* FallowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallowerListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				125652B125ADF8100003889F /* AppDelegate.swift */,
 				12EA4D4725AFC4B2003CF865 /* SceneDelegate.swift */,
 				12EA4D3C25AFC18F003CF865 /* SearchVC.swift */,
+				12EA4D4B25AFD16A003CF865 /* FallowerListVC.swift */,
 				12EA4D3925AFC17F003CF865 /* FavoritesListVC.swift */,
 				12EA4D3F25AFC1B6003CF865 /* GCButton.swift */,
 				12EA4D4225AFC1CF003CF865 /* GCTextField.swift */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12EA4D3A25AFC17F003CF865 /* FavoritesListVC.swift in Sources */,
+				12EA4D4C25AFD16A003CF865 /* FallowerListVC.swift in Sources */,
 				12EA4D4825AFC4B2003CF865 /* SceneDelegate.swift in Sources */,
 				12EA4D4325AFC1CF003CF865 /* GCTextField.swift in Sources */,
 				12EA4D3D25AFC18F003CF865 /* SearchVC.swift in Sources */,
