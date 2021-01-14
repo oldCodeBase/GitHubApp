@@ -10,6 +10,9 @@
 		125652B225ADF8100003889F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125652B125ADF8100003889F /* AppDelegate.swift */; };
 		125652BB25ADF8150003889F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125652BA25ADF8150003889F /* Assets.xcassets */; };
 		125652BE25ADF8150003889F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125652BC25ADF8150003889F /* LaunchScreen.storyboard */; };
+		12CC6F8D25B09F390039C370 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CC6F8C25B09F390039C370 /* NetworkManager.swift */; };
+		12CC6F9725B0A42E0039C370 /* Fallower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CC6F9625B0A42E0039C370 /* Fallower.swift */; };
+		12CC6F9A25B0A4360039C370 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CC6F9925B0A4360039C370 /* User.swift */; };
 		12EA0B2725B0538700AA3D37 /* GCTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA0B2625B0538700AA3D37 /* GCTitleLabel.swift */; };
 		12EA0B2B25B0557F00AA3D37 /* GCBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA0B2A25B0557F00AA3D37 /* GCBodyLabel.swift */; };
 		12EA0B2E25B0564F00AA3D37 /* GCAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA0B2D25B0564F00AA3D37 /* GCAlertVC.swift */; };
@@ -28,6 +31,9 @@
 		125652BA25ADF8150003889F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125652BD25ADF8150003889F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125652BF25ADF8150003889F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CC6F8C25B09F390039C370 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		12CC6F9625B0A42E0039C370 /* Fallower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fallower.swift; sourceTree = "<group>"; };
+		12CC6F9925B0A4360039C370 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12EA0B2625B0538700AA3D37 /* GCTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCTitleLabel.swift; sourceTree = "<group>"; };
 		12EA0B2A25B0557F00AA3D37 /* GCBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCBodyLabel.swift; sourceTree = "<group>"; };
 		12EA0B2D25B0564F00AA3D37 /* GCAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCAlertVC.swift; sourceTree = "<group>"; };
@@ -70,12 +76,31 @@
 		125652B025ADF8100003889F /* Git */ = {
 			isa = PBXGroup;
 			children = (
+				12CC6F9025B0A3EE0039C370 /* Model */,
+				12CC6F8B25B09F150039C370 /* Managers */,
 				12EA0B3525B061EB00AA3D37 /* Extensions */,
 				12EA0B3325B0619100AA3D37 /* View Controllers */,
 				12EA0B3425B061BC00AA3D37 /* Custom Views */,
 				12EA0B3625B0624900AA3D37 /* Support */,
 			);
 			path = Git;
+			sourceTree = "<group>";
+		};
+		12CC6F8B25B09F150039C370 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				12CC6F8C25B09F390039C370 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		12CC6F9025B0A3EE0039C370 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12CC6F9625B0A42E0039C370 /* Fallower.swift */,
+				12CC6F9925B0A4360039C370 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		12EA0B3325B0619100AA3D37 /* View Controllers */ = {
@@ -189,11 +214,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CC6F8D25B09F390039C370 /* NetworkManager.swift in Sources */,
 				12EA0B2B25B0557F00AA3D37 /* GCBodyLabel.swift in Sources */,
 				12EA4D3A25AFC17F003CF865 /* FavoritesListVC.swift in Sources */,
 				12EA0B3125B05DBE00AA3D37 /* UIViewController + Ext.swift in Sources */,
 				12EA4D4C25AFD16A003CF865 /* FallowerListVC.swift in Sources */,
 				12EA0B2E25B0564F00AA3D37 /* GCAlertVC.swift in Sources */,
+				12CC6F9A25B0A4360039C370 /* User.swift in Sources */,
+				12CC6F9725B0A42E0039C370 /* Fallower.swift in Sources */,
 				12EA0B2725B0538700AA3D37 /* GCTitleLabel.swift in Sources */,
 				12EA4D4825AFC4B2003CF865 /* SceneDelegate.swift in Sources */,
 				12EA4D4325AFC1CF003CF865 /* GCTextField.swift in Sources */,
