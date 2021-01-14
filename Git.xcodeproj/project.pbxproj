@@ -71,8 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				12EA0B3525B061EB00AA3D37 /* Extensions */,
-				12EA0B3425B061BC00AA3D37 /* Custom Views */,
 				12EA0B3325B0619100AA3D37 /* View Controllers */,
+				12EA0B3425B061BC00AA3D37 /* Custom Views */,
 				12EA0B3625B0624900AA3D37 /* Support */,
 			);
 			path = Git;
