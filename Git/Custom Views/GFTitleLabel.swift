@@ -1,5 +1,5 @@
 //
-//  GCBodyLabel.swift
+//  GFTitleLabel.swift
 //  Git
 //
 //  Created by Ibragim Akaev on 14/01/2021.
@@ -7,16 +7,17 @@
 
 import UIKit
 
-class GCBodyLabel: UILabel {
+class GFTitleLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
     
-    init(textAlignment: NSTextAlignment) {
+    init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
         super.init(frame: .zero)
         self.textAlignment  = textAlignment
+        self.font           = UIFont.systemFont(ofSize: fontSize, weight: .bold)
         configure()
     }
     
@@ -28,11 +29,10 @@ class GCBodyLabel: UILabel {
     
     private func configure() {
         textColor                                   = .label
-        font                                        = UIFont.preferredFont(forTextStyle: .body)
         adjustsFontSizeToFitWidth                   = true
-        minimumScaleFactor                          = 0.75
-        lineBreakMode                               = .byWordWrapping
+        minimumScaleFactor                          = 0.9
+        lineBreakMode                               = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints   = false
     }
-    
+
 }

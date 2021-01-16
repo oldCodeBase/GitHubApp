@@ -1,5 +1,5 @@
 //
-//  GCTextField.swift
+//  GFTextField.swift
 //  Git
 //
 //  Created by Ibragim Akaev on 14/01/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GCTextField: UITextField {
+class GFTextField: UITextField {
 
     override init(frame: CGRect) {
         super.init(frame: frame)

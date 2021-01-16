@@ -1,5 +1,5 @@
 //
-//  GCButton.swift
+//  GFButton.swift
 //  Git
 //
 //  Created by Ibragim Akaev on 14/01/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GCButton: UIButton {
+class GFButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,7 +28,6 @@ class GCButton: UIButton {
     
     private func configure() {
         layer.cornerRadius = 10
-        titleLabel?.textColor = .white
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
     }

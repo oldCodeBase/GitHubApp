@@ -1,5 +1,5 @@
 //
-//  GCAlertVC.swift
+//  GFAlertVC.swift
 //  Git
 //
 //  Created by Ibragim Akaev on 14/01/2021.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class GCAlertVC: UIViewController {
+class GFAlertVC: UIViewController {
     
     let containerView       = UIView()
-    let titleLabel          = GCTitleLabel(textAlignment: .center, fontSize: 20)
-    let messageLabel        = GCBodyLabel(textAlignment: .center)
-    let actionButton        = GCButton(backgroundColor: .systemPink, title: "Ok")
+    let titleLabel          = GFTitleLabel(textAlignment: .center, fontSize: 20)
+    let messageLabel        = GFBodyLabel(textAlignment: .center)
+    let actionButton        = GFButton(backgroundColor: .systemPink, title: "Ok")
     
     let padding: CGFloat    = 20
     
@@ -99,3 +99,4 @@ class GCAlertVC: UIViewController {
     }
 
 }
+

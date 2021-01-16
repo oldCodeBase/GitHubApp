@@ -10,8 +10,8 @@ import UIKit
 class SearchVC: UIViewController {
     
     let logoImageView           = UIImageView()
-    let usernameTextField       = GCTextField()
-    let callToActionButton      = GCButton(backgroundColor: .systemGreen, title: "Get Followers")
+    let usernameTextField       = GFTextField()
+    let callToActionButton      = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
 
     var isUresnameIntered: Bool { return !usernameTextField.text!.isEmpty }
         
@@ -32,15 +32,15 @@ class SearchVC: UIViewController {
     
     @objc private func pushFallowerListVC() {
         guard isUresnameIntered else {
-            presentGCAlertOnMainThread(title: "Empty Username",
+            presentGFAlertOnMainThread(title: "Empty Username",
                                        message: "Please enter a username. We need to know who to look for.",
                                        buttonTitle: "Ok")
             return
         }
-        let fallowerListVC      = FallowerListVC()
-        fallowerListVC.username = usernameTextField.text
-        fallowerListVC.title    = usernameTextField.text
-        navigationController?.pushViewController(fallowerListVC, animated: true)
+        let followerListVC      = FollowerListVC()
+        followerListVC.username = usernameTextField.text
+        followerListVC.title    = usernameTextField.text
+        navigationController?.pushViewController(followerListVC, animated: true)
     }
     
     private func createDissmisKeyboardTapGesture() {
