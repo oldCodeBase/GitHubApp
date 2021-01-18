@@ -1,5 +1,5 @@
 //
-//  UIViewController + Ext.swift
+//  UIViewController+Ext.swift
 //  Git
 //
 //  Created by Ibragim Akaev on 14/01/2021.
@@ -46,5 +46,11 @@ extension UIViewController {
             containerView.removeFromSuperview()
             containerView = nil
         }
+    }
+    
+    func showEmptyStateView(with message: String, in view: UIView) {
+        let emptyStateView = GFEmptyStateView(message: message)
+        emptyStateView.frame = view.bounds
+        view.addSubview(emptyStateView)
     }
 }
