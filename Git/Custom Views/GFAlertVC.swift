@@ -9,16 +9,17 @@ import UIKit
 
 class GFAlertVC: UIViewController {
     
-    let containerView       = UIView()
-    let titleLabel          = GFTitleLabel(textAlignment: .center, fontSize: 20)
-    let messageLabel        = GFBodyLabel(textAlignment: .center)
-    let actionButton        = GFButton(backgroundColor: .systemPink, title: "Ok")
-    
-    let padding: CGFloat    = 20
+    let containerView   = UIView()
+    let titleLabel      = GFTitleLabel(textAlignment: .center, fontSize: 20)
+    let messageLabel    = GFBodyLabel(textAlignment: .center)
+    let actionButton    = GFButton(backgroundColor: .systemPink, title: "Ok")
     
     var alertTitle: String?
     var message: String?
     var buttonTitle: String?
+    
+    let padding: CGFloat = 20
+    
     
     init(title: String, message: String, buttonTitle: String) {
         super.init(nibName: nil, bundle: nil)
@@ -27,9 +28,11 @@ class GFAlertVC: UIViewController {
         self.buttonTitle    = buttonTitle
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +43,8 @@ class GFAlertVC: UIViewController {
         configureMessageLabel()
     }
     
-    private func configureContainerView() {
+    
+    func configureContainerView() {
         view.addSubview(containerView)
         containerView.backgroundColor       = .systemBackground
         containerView.layer.cornerRadius    = 16
@@ -51,12 +55,13 @@ class GFAlertVC: UIViewController {
         NSLayoutConstraint.activate([
             containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            containerView.heightAnchor.constraint(equalToConstant: 280),
-            containerView.widthAnchor.constraint(equalToConstant: 280)
+            containerView.widthAnchor.constraint(equalToConstant: 280),
+            containerView.heightAnchor.constraint(equalToConstant: 220)
         ])
     }
     
-    private func configureTitleLabel() {
+    
+    func configureTitleLabel() {
         containerView.addSubview(titleLabel)
         titleLabel.text = alertTitle ?? "Something went wrong"
         
@@ -68,7 +73,8 @@ class GFAlertVC: UIViewController {
         ])
     }
     
-    private func configureActionButton() {
+    
+    func configureActionButton() {
         containerView.addSubview(actionButton)
         actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
         actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
@@ -81,7 +87,8 @@ class GFAlertVC: UIViewController {
         ])
     }
     
-    private func configureMessageLabel() {
+    
+    func configureMessageLabel() {
         containerView.addSubview(messageLabel)
         messageLabel.text           = message ?? "Unable to complete request"
         messageLabel.numberOfLines  = 4
@@ -94,9 +101,9 @@ class GFAlertVC: UIViewController {
         ])
     }
     
-    @objc private func dismissVC() {
+    
+    @objc func dismissVC() {
         dismiss(animated: true)
     }
-
 }
 
