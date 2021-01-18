@@ -35,7 +35,7 @@
 		122AE53F25B32FEC002858E5 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		122AE54425B330B1002858E5 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		122AE54725B33151002858E5 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
-		125652AE25ADF8100003889F /* Git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Git.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		125652AE25ADF8100003889F /* GitFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		125652B125ADF8100003889F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		125652BA25ADF8150003889F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125652BD25ADF8150003889F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		125652AF25ADF8100003889F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				125652AE25ADF8100003889F /* Git.app */,
+				125652AE25ADF8100003889F /* GitFollowers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		125652AD25ADF8100003889F /* Git */ = {
+		125652AD25ADF8100003889F /* GitFollowers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 125652C225ADF8150003889F /* Build configuration list for PBXNativeTarget "Git" */;
+			buildConfigurationList = 125652C225ADF8150003889F /* Build configuration list for PBXNativeTarget "GitFollowers" */;
 			buildPhases = (
 				125652AA25ADF8100003889F /* Sources */,
 				125652AB25ADF8100003889F /* Frameworks */,
@@ -185,9 +185,9 @@
 			);
 			dependencies = (
 			);
-			name = Git;
+			name = GitFollowers;
 			productName = Git;
-			productReference = 125652AE25ADF8100003889F /* Git.app */;
+			productReference = 125652AE25ADF8100003889F /* GitFollowers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 125652A925ADF8100003889F /* Build configuration list for PBXProject "Git" */;
+			buildConfigurationList = 125652A925ADF8100003889F /* Build configuration list for PBXProject "GitFollowers" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				125652AD25ADF8100003889F /* Git */,
+				125652AD25ADF8100003889F /* GitFollowers */,
 			);
 		};
 /* End PBXProject section */
@@ -432,7 +432,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		125652A925ADF8100003889F /* Build configuration list for PBXProject "Git" */ = {
+		125652A925ADF8100003889F /* Build configuration list for PBXProject "GitFollowers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				125652C025ADF8150003889F /* Debug */,
@@ -441,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		125652C225ADF8150003889F /* Build configuration list for PBXNativeTarget "Git" */ = {
+		125652C225ADF8150003889F /* Build configuration list for PBXNativeTarget "GitFollowers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				125652C325ADF8150003889F /* Debug */,
