@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol FollowerListVCDelegate: class {
+    func didRequestFollowers(for username: String)
+}
+
 class FollowerListVC: UIViewController {
     
     enum Section { case main }
@@ -51,6 +55,7 @@ class FollowerListVC: UIViewController {
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
     
+    
     func configureSearchController() {
         let searchController                                    = UISearchController()
         searchController.searchResultsUpdater                   = self
@@ -73,8 +78,8 @@ class FollowerListVC: UIViewController {
                 self.followers.append(contentsOf: followers)
                 
                 if self.followers.isEmpty {
-                    let message = "This user doesn't have any fallowers. Go follow them 😀."
-                    DispatchQueue.main.async { self.showEmptyStateView(with: message, in: self.view)}
+                    let message = "This user doesn't have any followers. Go follow them 😀."
+                    DispatchQueue.main.async { self.showEmptyStateView(with: message, in: self.view) }
                     return
                 }
                 
@@ -124,13 +129,13 @@ extension FollowerListVC: UICollectionViewDelegate {
         let follower        = activeArray[indexPath.item]
         
         let destVC          = UserInfoVC()
-        destVC.username = follower.login
-        let navController = UINavigationController(rootViewController: destVC)
+        destVC.username     = follower.login
+        destVC.delegate     = self
+        let navController   = UINavigationController(rootViewController: destVC)
         present(navController, animated: true)
-        
     }
-
 }
+
 
 extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
     
@@ -146,3 +151,18 @@ extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
         updateData(on: followers)
     }
 }
+
+
+extension FollowerListVC: FollowerListVCDelegate {
+    
+    func didRequestFollowers(for username: String) {
+        self.username   = username
+        title           = username
+        page            = 1
+        followers.removeAll()
+        filteredFollowers.removeAll()
+        collectionView.setContentOffset(.zero, animated: true)
+        getFollowers(username: username, page: page)
+    }
+}
+
