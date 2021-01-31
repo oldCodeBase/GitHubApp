@@ -20,7 +20,6 @@ class GFAlertVC: UIViewController {
     
     let padding: CGFloat = 20
     
-    
     init(title: String, message: String, buttonTitle: String) {
         super.init(nibName: nil, bundle: nil)
         self.alertTitle     = title

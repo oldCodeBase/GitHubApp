@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1210DE5D25C6AD0600DF4663 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210DE5C25C6AD0600DF4663 /* UIView+Ext.swift */; };
+		1210DE6025C6FBF200DF4663 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210DE5F25C6FBF200DF4663 /* UITableView+Ext.swift */; };
 		121F851925B9B5F000F5F08A /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F851825B9B5F000F5F08A /* GFUserInfoHeaderVC.swift */; };
 		121F851C25B9B65C00F5F08A /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F851B25B9B65C00F5F08A /* GFSecondaryTitleLabel.swift */; };
 		121F851F25B9BE0E00F5F08A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F851E25B9BE0E00F5F08A /* Constants.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		1210DE5C25C6AD0600DF4663 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		1210DE5F25C6FBF200DF4663 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		121F851825B9B5F000F5F08A /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		121F851B25B9B65C00F5F08A /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		121F851E25B9BE0E00F5F08A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				12EA0B3025B05DBE00AA3D37 /* UIViewController+Ext.swift */,
 				12E54B9E25BAC17E0037822A /* Date+Ext.swift */,
 				1210DE5C25C6AD0600DF4663 /* UIView+Ext.swift */,
+				1210DE5F25C6FBF200DF4663 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				122AE53225B325B8002858E5 /* FollowerListVC.swift in Sources */,
 				12EA4D4025AFC1B6003CF865 /* GFButton.swift in Sources */,
 				125652B225ADF8100003889F /* AppDelegate.swift in Sources */,
+				1210DE6025C6FBF200DF4663 /* UITableView+Ext.swift in Sources */,
 				121F852825B9E21E00F5F08A /* GFRepoItemVC.swift in Sources */,
 				126045F525B9923F00733C35 /* UserInfoVC.swift in Sources */,
 			);
