@@ -3,9 +3,9 @@
 ## Overview of the project
 This project involves making network calls to GitHub's API to access its users and followers data. Retrieving, handling, and parsing the JSON data. Displaying and formatting the data within the application's UI that is presentable and coherent in styling.
 
-The UI is built 100% programmatically without the use of Storyboards. The reason for this is to build a deeper understanding and appreciation for UI/UX design implementation.
+The UI is built 100% programmatically without the use of Storyboards.
 
-No 3rd party libraries are used for this project. Understanding the trade offs between using a 3rd party library or not is key. For the purpose of this project only GET URL requests are made and therefore using my own implemtation with Apple's URLSession class is satisfactory.
+No 3rd party libraries are used for this project.
 
 ## Details of the project
 * Proper project organization adhering as close as possible to the MVC architecture.
